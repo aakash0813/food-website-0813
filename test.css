@@ -1,0 +1,345 @@
+ :root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Inter", sans-serif;
+  --ff-design: "Satisfy", cursive;
+  --ff-brand: "Margarine", sans-serif;
+
+  --clr-white: #fff;
+  --clr-dark: #333;
+  --clr-grey-1: #102a42;
+  --clr-grey-2: #617d98;
+  --clr-grey-3: #f1f5f8;
+  --clr-primary: #f53b57;
+  --clr-primary-light: #f04660;
+  --clr-secondary: #e9b949;
+}
+
+/* ---------- Base Styles ---------- */
+body {
+  font-family: var(--ff-primary);
+  margin: 0;
+  background: #f5f5f5;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+  font-family: var(--ff-design);
+  color: transparent;
+  background-image: linear-gradient(180deg, var(--clr-primary), var(--clr-secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+/* ---------- Product Grid ---------- */
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pic {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pic img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.pic:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+}
+
+.test {
+  display: grid;
+  grid-template-rows: auto;
+  position: relative;
+  margin-top: 10px;
+}
+
+.test2 {
+  margin-top: 5px;
+  color: #555;
+}
+
+.product button {
+  background: var(--clr-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.product button:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Cart ---------- */
+.cart {
+  background: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item button {
+  background: #e76f51;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-item button:hover {
+  background: #d9534f;
+}
+
+.total {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ---------- Place Order Button ---------- */
+
+  .placeOrder {
+  background: var(--clr-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: block;
+  margin: 20px auto 0 auto; /* Centers horizontally */
+  text-align: center;
+  
+}
+
+
+  
+
+.placeOrder:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Navbar (Form Popup) ---------- */
+.navbar {
+  position: fixed;
+  top: 80px;
+  left: -100%;
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar.open {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  font-size: 24px;
+  background: var(--clr-primary);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  border-radius: 5px;
+}
+
+.close-btn:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Form ---------- */
+#form-validate {
+  display: grid;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+#form-validate .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-validate label {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+#form-validate input {
+  height: 35px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(202, 199, 199);
+  font-size: 15px;
+  padding: 5px;
+}
+
+#form-validate button {
+  height: 40px;
+  background-color: var(--clr-primary);
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  transition: 0.3s;
+}
+
+#form-validate button:hover {
+  opacity: 0.8;
+}
+
+#form-validate span {
+  color: red;
+  font-size: 12px;
+}
+
+/* ---------- Responsive Design ---------- */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product h3 {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* Mobile (portrait) */
+@media screen and (max-width: 576px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .product {
+    text-align: center;
+  }
+
+  .pic img {
+    height: 180px;
+  }
+
+  .placeOrder {
+    width: 100%;
+    float: none;
+    margin-top: 15px;
+  }
+
+  .navbar {
+    top: 20px;
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .close-btn {
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+  }
+
+  #form-validate label {
+    font-size: 14px;
+  }
+
+  #form-validate input {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small (small phones) */
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .product h3 {
+    font-size: 1rem;
+  }
+
+  .product button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}

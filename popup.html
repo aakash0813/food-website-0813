@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="openModal">openModal</button>
+    <div class="modal" id="modal">
+    <div class="modal-inner">
+        <h2>cool</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tenetur consequuntur accusantium ad officiis. Voluptas voluptatibus quam velit! Natus reiciendis asperiores labore accusamus quod nulla amet quasi eveniet, enim iure.</p>
+        <button id="closeModal"></button>
+    </div>
+    </div>
+    <style>
+        .modal{
+            background-color: black;
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all 0.3s ease-in-out;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-open{
+            opacity: 1;
+            z-index: 999;
+        }
+    </style>
+</body>
+</html>
