@@ -261,6 +261,11 @@ h1 {
   color: red;
   font-size: 12px;
 }
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 /* ---------- Responsive Design ---------- */
 
@@ -327,6 +332,8 @@ h1 {
     font-size: 14px;
   }
 }
+
+
 
 /* Extra Small (small phones) */
 @media screen and (max-width: 360px) {
