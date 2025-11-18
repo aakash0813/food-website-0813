@@ -308,7 +308,7 @@ input::-webkit-outer-spin-button,
     text-align: center;
     height: 320px;
     width: 180px;
-    margin-right: none;
+    margin-right: 20px;
     margin-left: 20px;
     
 
