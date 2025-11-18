@@ -292,6 +292,7 @@ input::-webkit-outer-spin-button,
 @media screen and (max-width: 576px) {
   .products {
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   h1 {
@@ -302,6 +303,7 @@ input::-webkit-outer-spin-button,
     text-align: center;
     height: 320px;
     width: 180px;
+    justify-content: center;
   }
 .cart{
   width: 380px;
