@@ -294,6 +294,7 @@ input::-webkit-outer-spin-button,
     grid-template-columns: 50% 50%;
     justify-content: center;
     column-gap: 40px;
+  
     
   }
 .name{
@@ -310,7 +311,7 @@ input::-webkit-outer-spin-button,
     height: 320px;
     width: 180px;
     left: 20px;
-    right: 15px;
+  
   }
   .product button{
     top: 5px;
