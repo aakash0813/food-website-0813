@@ -288,12 +288,13 @@ input::-webkit-outer-spin-button,
   }
 }
 /* Mobile (portrait) */
+/* Mobile (portrait) */
 @media screen and (max-width: 576px) {
   .products {
     grid-template-columns: 50% 50%;
     justify-content: center;
     column-gap: 40px;
-    padding-right: 20px;
+    margin: 0 auto;
   
     
   }
@@ -310,7 +311,7 @@ input::-webkit-outer-spin-button,
     text-align: center;
     height: 320px;
     width: 180px;
-    margin: 0 auto;
+    left: 20px;
   
   }
   .product button{
@@ -318,8 +319,7 @@ input::-webkit-outer-spin-button,
   }
 .cart{
   width: 370px;
-      margin: 0 auto;
-
+  margin-right: 50px;
 }
   .pic img {
     height: 180px;
@@ -350,8 +350,7 @@ input::-webkit-outer-spin-button,
   #form-validate input {
     font-size: 14px;
   }
-} 
-
+}
 /* Extra Small (small phones) */
 @media screen and (max-width: 360px) {
   h1 {
