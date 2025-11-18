@@ -309,12 +309,12 @@ input::-webkit-outer-spin-button,
     height: 320px;
     width: 180px;
     left: 20px;
-    right: 10px;
+    right: 15px;
     
 
   }
 .cart{
-  width: 280px;
+  width: 300px;
   margin-right: 50px;
 }
   .pic img {
