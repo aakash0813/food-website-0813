@@ -299,6 +299,7 @@ input::-webkit-outer-spin-button,
 .name{
   text-align: center;
   margin-left: 10%;
+  font-weight: 400;
 }
   h1 {
     font-size: 32px;
@@ -315,7 +316,7 @@ input::-webkit-outer-spin-button,
     top: 5px;
   }
 .cart{
-  width: 380px;
+  width: 350px;
   margin-right: 50px;
 }
   .pic img {
