@@ -289,7 +289,7 @@ input::-webkit-outer-spin-button,
 }
 /* Mobile (portrait) */
 /* Mobile (portrait) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .products {
     grid-template-columns: 50% 50%;
     justify-content: center;
@@ -311,7 +311,7 @@ input::-webkit-outer-spin-button,
     text-align: center;
     height: 320px;
     width: 180px;
-    left: 20px;
+    margin: 0 auto;
   
   }
   .product button{
