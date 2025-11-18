@@ -300,10 +300,15 @@ input::-webkit-outer-spin-button,
 
   .product {
     text-align: center;
+     
   }
-
-  .pic img {
+   .container{
     height: 180px;
+    width: 180px;
+   }
+  .pic img {
+   height: 180px;
+    
   }
 
   .placeOrder {
